@@ -108,3 +108,26 @@ input::placeholder {
     grid-template-rows: auto;
     gap: 5px;
 }
+
+/* this will be displayed using JS*/
+.book {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#remove {
+    width: 200px;
+    padding: 8px;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    background-color: #808080;
+    color: #fff;
+}
