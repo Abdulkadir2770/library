@@ -17,8 +17,24 @@
 
     <!-- main content area-->
     <div class="content-container">
-        <div></div>
-        <div></div>
+        <div class="grid-item side-bar">
+            <form action="#" method="post">
+                <h1>Add a Book</h1>
+                <div>
+                    <input type="text" id="title" placeholder="Title">
+                </div>
+                <div>
+                    <input type="text" id="author" placeholder="Author">
+                </div>
+                <div>
+                    <input type="number" name="numOfPages" id="numOfPages" placeholder="Pages">
+                </div>
+                <div>
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+        <div class="grid-item book-display"></div>
     </div>
 
     <script src="./app.js"></script>

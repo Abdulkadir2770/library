@@ -39,3 +39,12 @@ body {
 }
 
 /* main content area*/
+.content-container {
+    height: 87vh;
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.grid-item {
+    border: 1px solid #000;
+}
