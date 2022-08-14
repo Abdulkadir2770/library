@@ -17,12 +17,21 @@ const bookInfo = () => {
 submitBtn.addEventListener("click", (e) => {
     e.preventDefault;
     
-    const book = document.createElement("div");
-    bookDislayGrid.appendChild(book);
-    book.classList.add("book");
-    book.innerText = "It works";
+    // creating a <div> element and appending it into the DOM
+    const bookDivTag = document.createElement("div");
+    bookDislayGrid.appendChild(bookDivTag);
+    bookDivTag.classList.add("book");
 
-    console.log(title.value);
-    console.log(author.value);
-    console.log(numOfPages.value);
+    // create the <p>'s and appending it
+    const p1 = document.createElement("p");
+    const p2 = document.createElement("p");
+    const p3 = document.createElement("p");
+
+    bookDivTag.appendChild(p1);
+    bookDivTag.appendChild(p2);
+    bookDivTag.appendChild(p3);
+    
+    p1.innerText = `Title: ${title.value}`;
+    p2.innerText = `Author: ${author.value}`;
+    p3.innerText = `Num of Pages: ${numOfPages.value}`;
 })
