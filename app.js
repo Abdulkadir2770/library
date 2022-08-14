@@ -34,4 +34,8 @@ submitBtn.addEventListener("click", (e) => {
     p1.innerText = `Title: ${title.value}`;
     p2.innerText = `Author: ${author.value}`;
     p3.innerText = `Num of Pages: ${numOfPages.value}`;
+
+    title.value = "Title";
+    author.value = "Author";
+    numOfPages.value = 0;
 })
