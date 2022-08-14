@@ -112,9 +112,14 @@ input::placeholder {
 /* this will be displayed using JS*/
 .book {
     background-color: #fff;
+    width: 280px;
+    height: 225px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 20px;
 }
 
 #remove {
