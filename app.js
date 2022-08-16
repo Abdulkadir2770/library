@@ -26,24 +26,22 @@ submitBtn.addEventListener("click", (e) => {
     p2.innerText = `Author: ${author.value}`;
     p3.innerText = `Num of Pages: ${numOfPages.value}`;
 
-    // creating a removal button
-    const removeButton = document.createElement("button");
-    removeButton.classList.add("remove");
-    removeButton.innerText = "Remove";
-    bookDivTag.appendChild(removeButton);
-    return removeButton;
-
     title.value = "Title";
     author.value = "Author";
     numOfPages.value = 0;
 
+      // creating a removal button
+      const removeButton = document.createElement("button");
+      removeButton.classList.add("remove");
+      removeButton.innerText = "Remove";
+      bookDivTag.appendChild(removeButton);
+      
+      removeButton.addEventListener("click", () => {
+            if(bookDislayGrid.hasChildNodes()) {
+                bookDislayGrid.removeChild(bookDislayGrid.children[0]);
+            }
+      })
+
     
 })
 
-function remove() {
-    const removeButton = document.createElement("button");
-    removeButton.classList.add("remove");
-    removeButton.innerText = "Remove";
-    bookDivTag.appendChild(removeButton);
-
-}
