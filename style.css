@@ -124,7 +124,7 @@ input::placeholder {
     font-weight: bold;
 }
 
-#remove {
+.remove {
     width: 200px;
     padding: 8px;
     font-size: 20px;
@@ -137,4 +137,24 @@ input::placeholder {
     -o-border-radius: 5px;
     background-color: #808080;
     color: #fff;
+}
+
+.remove:hover {
+    background-color: #23e300;
+}
+
+#readQa {
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+#haveRead {
+    margin-right: 20px;
+}
+
+label {
+    margin-right: 10px;
 }
